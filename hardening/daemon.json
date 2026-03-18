@@ -1,0 +1,11 @@
+# /etc/docker/daemon.json - Ruta 
+{
+  "no-new-privileges": true,
+  "log-driver": "json-file",
+  "log-opts": {
+    "max-size": "10m",
+    "max-file": "3"
+  },
+  "live-restore": true,
+  "userland-proxy": false
+}
